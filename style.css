@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(55, 49, 63);
+    margin: 0px;
+    font-family: "Sono", monospace;
+    text-shadow: 0 0 2px rgb(255, 141, 164);
+    color: rgb(255, 207, 216);
+}
+
+header {
+    background-color: rgb(39, 34, 46);
+    padding: 15px 15px 30px 15px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+h1, h2 {
+    text-shadow: 0 0 7px rgb(255, 48, 89);
+    color: rgb(255, 104, 134);
+    font-family: "Tilt Neon", sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    text-shadow: 0 0 8px rgb(255, 22, 69);
+    color: rgb(255, 78, 113);
+    font-size: 40px;
+    text-align: center;
+
+}
+
+h2 {
+    text-shadow: 0 0 6px rgb(255, 48, 89);
+    color: rgb(255, 104, 134);
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+section {
+    margin: 30px;
+}
+
+a img { 
+    /*FireFox Only !*/
+    image-rendering: -moz-crisp-edges; 
+    height: 45px;
+    width: auto;
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 150px rgb(28, 25, 31) inset;
+  }
