@@ -1,35 +1,54 @@
 body {
-    background-color: rgb(55, 49, 63);
+    background: radial-gradient(hsl(280, 20%, 20%), hsl(280, 20%, 10%));
     margin: 0px;
     font-family: "Sono", monospace;
-    text-shadow: 0 0 2px rgb(255, 141, 164);
-    color: rgb(255, 207, 216);
+    text-shadow: 0 0 2px hsl(280, 75%, 80%);
+    color: hsl(280, 80%, 85%);
 }
 
 header {
-    background-color: rgb(39, 34, 46);
-    padding: 15px 15px 30px 15px;
+    padding: 15px 15px 35px 15px;
     border-radius: 0px 0px 30px 30px;
 }
 
-h1, h2 {
-    text-shadow: 0 0 7px rgb(255, 48, 89);
-    color: rgb(255, 104, 134);
+.dark_background {
+    background-color: hsl(240, 12%, 13%);
+    box-shadow: inset 0px 0px 50px 45px hsl(240, 12%, 10%);
+    border: solid 3px hsl(240, 12%, 10%);
+}
+
+h1, h2, h3 {
     font-family: "Tilt Neon", sans-serif;
     margin: 0px;
 }
 
 h1 {
-    text-shadow: 0 0 8px rgb(255, 22, 69);
-    color: rgb(255, 78, 113);
-    font-size: 40px;
+    text-shadow: 0 0 9px hsl(280, 60%, 52%);
+    color: hsl(280, 60%, 55%);
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    /* Box */
+    padding: 15px 0px;
+    margin: 15px;
+    border-radius: 30px;
+    /* Dark Background */
+    background-color: hsl(240, 12%, 13%);
+    box-shadow: inset 0px 0px 20px 20px hsl(240, 12%, 10%);
+    border: solid 3px hsl(240, 12%, 10%);
+    /* Text */
+    text-shadow: 0 0 7px hsl(280, 70%, 55%);
+    color: hsl(280, 70%, 60%);
+    font-size: 35px;
     text-align: center;
 
 }
 
-h2 {
-    text-shadow: 0 0 6px rgb(255, 48, 89);
-    color: rgb(255, 104, 134);
+h3 {
+    text-shadow: 0 0 3px hsl(280, 80%, 60%);
+    color: hsl(280, 80%, 65%);
     font-size: 30px;
 }
 
@@ -37,22 +56,90 @@ p {
     font-size: 20px;
 }
 
-section {
-    margin: 30px;
+img {
+    box-shadow: 0px 0px 15px 5px hsl(240, 12%, 5%);
 }
 
 a img { 
-    /*FireFox Only !*/
-    image-rendering: -moz-crisp-edges; 
+    box-shadow: none;
     height: 45px;
     width: auto;
+    /*FireFox Only !*/
+    image-rendering: -moz-crisp-edges;
 }
 
-.vignette {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 150px rgb(28, 25, 31) inset;
-  }
+div {
+    display: flex;
+}
+
+section {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin: 50px;
+    padding: 50px;
+}
+
+/* presentation */
+
+#presentation_paragraph {
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+    align-items: start;
+}
+#presentation_photos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 625px;
+    justify-content: center;
+}
+
+#presentation_photos img {
+    height: 125px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+/* Article */
+
+article {
+    border-radius: 30px;
+    margin: 50px;
+    padding: 50px;
+}
+
+article img {
+    height: 167px;
+    margin-right: 15px;
+    border-radius: 15px;
+    float: left;
+}
+
+/* Selection */
+.selection_card {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsl(240, 12%, 13%);
+    box-shadow: inset 0px 0px 50px 45px hsl(240, 12%, 10%);
+    border: solid 3px hsl(240, 12%, 10%);
+}
+
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.preview img {
+ height: 90px;
+ width: 125px;
+ object-fit: cover;
+}
